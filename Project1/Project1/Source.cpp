@@ -1,17 +1,16 @@
 #include <iostream>
 #include <string>
+#include "TaskManager.h"
 
 using namespace std;
 
 int main()
 {
-	double i;
-	for (i = 0; i >= 0; i+=0.0000000001){
-		cout << i <<"\n";
-	}
+	TaskManager taskmanager;
 
-
-
-
+	taskmanager.NewTask();
+	cout << "\n\nshit\n\n";
+	taskmanager.Printy();
+	system("pause");
 	return 0;
 }
