@@ -1,4 +1,4 @@
-#include "TaskManager.h"
+#include "Manager.h"
 using namespace std;
 
 TaskManager::TaskManager()
@@ -14,20 +14,18 @@ TaskManager::~TaskManager()
 void TaskManager::NewTask()
 {
 	string name;
-	string deadline;
-	int id;
-	int priority;
+	string address;
+	
+	int number;
 
 	cout << "Task     name: ";
 	cin >> name;
-	cout << "Task deadline: ";
-	cin >> deadline;
-	cout << "Task       id: ";
-	cin >> id;
-	cout << "Task priority: ";
-	cin >> priority;
+	cout << "Task address: ";
+	cin >> address;
+	cout << "Task Number: ";
+	cin >> number;
 
-	Task *task = new Task(name, deadline, id, priority);
+	Task *task = new Task(name, address, id, number);
 	tasks.push_back(task);
 
 }

@@ -7,16 +7,15 @@ class Task
 private:
 
 	string name;
-	string deadline;
-	int id;
-	int priority;
+	string address;
+	int number;
 	
 
 protected:
 
 public:
 
-	Task(string name, string deadline, int id, int priority);
+	Task(string name, string address,int number);
 	~Task(void);
 	void Print();
 };

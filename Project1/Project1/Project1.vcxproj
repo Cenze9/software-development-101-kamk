@@ -64,13 +64,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Task.cpp" />
+    <ClCompile Include="Phonebook.cpp" />
     <ClCompile Include="Source.cpp" />
-    <ClCompile Include="TaskManager.cpp" />
+    <ClCompile Include="Manager.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Task.h" />
-    <ClInclude Include="TaskManager.h" />
+    <ClInclude Include="Phonebook.h" />
+    <ClInclude Include="Manager.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
