@@ -2,21 +2,21 @@
 #include <string>
 #include <deque>
 using namespace std;
-class Task
+class Phonebook
 {
 private:
 
 	string name;
 	string address;
-	int number;
-	
+	string number;
 
 protected:
 
 public:
 
-	Task(string name, string address,int number);
-	~Task(void);
+	Phonebook(string name, string address,string number);
+	~Phonebook(void);
 	void Print();
+
 };
 

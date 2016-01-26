@@ -2,23 +2,23 @@
 #include <iostream>
 using namespace std;
 
-Task::Task(string call, string end, int phone)
+Phonebook::Phonebook(string call, string end, string phone)
 {
 	name = call;
 	address = end;
 	number = phone;
 }
 
-Task::~Task()
+Phonebook::~Phonebook()
 {
 }
 
 
 
-void Task::Print()
+void Phonebook::Print()
 {
-	cout << "    Name: " << name << endl;
-	cout << "      Id: " << id << endl;
-	cout << "number: " << number << endl;
+	cout << "   Name: " << name << endl;
+	cout << "address: " << address << endl;
+	cout << " number: " << number << endl;
 
 }

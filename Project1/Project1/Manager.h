@@ -4,18 +4,20 @@
 #include <iostream>
 using namespace std;
 
-class TaskManager
+class Manager
 {
 private:
 
-	deque<Task*> tasks;
+	deque<Phonebook*> books;
 
 protected:
 
 public:
-	TaskManager();
-	~TaskManager();
-	void NewTask();
+
+	Manager();
+	~Manager();
+	void NewPerson();
 	void Printy();
+	void Find();
 };
 

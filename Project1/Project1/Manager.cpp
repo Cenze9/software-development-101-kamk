@@ -1,42 +1,46 @@
 #include "Manager.h"
 using namespace std;
-
-TaskManager::TaskManager()
+#include <set>
+Manager::Manager()
 {
 
 }
 
 
-TaskManager::~TaskManager()
+Manager::~Manager()
 {
 }
 
-void TaskManager::NewTask()
+void Manager::NewPerson()
 {
 	string name;
 	string address;
-	
-	int number;
+	string number;
 
-	cout << "Task     name: ";
+	cout << "   name: ";
 	cin >> name;
-	cout << "Task address: ";
+	cout << "address: ";
 	cin >> address;
-	cout << "Task Number: ";
+	cout << " number: ";
 	cin >> number;
 
-	Task *task = new Task(name, address, id, number);
-	tasks.push_back(task);
+	Phonebook * book = new Phonebook(name, address, number);
+	books.push_back(book);
 
 }
 
-void TaskManager::Printy()
+void Manager::Printy()
 {
-	deque<Task*>::iterator it;
+	deque<Phonebook*>::iterator it;
 
-	for (it = tasks.begin(); it != tasks.end(); ++it)
+	for (it = books.begin(); it != books.end(); ++it)
 	{
 		(*it)->Print();
 	}
 
+}
+
+void Manager::Find()
+{
+	set<int>::iterator it;
 }
